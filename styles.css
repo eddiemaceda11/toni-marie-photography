@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -138,7 +140,7 @@ button:hover {
 
 /* Main */
 main {
-  height: 700px;
+  height: 650px;
   background-color: #f9f7f3;
   margin: 0 auto;
 }
@@ -147,7 +149,7 @@ main {
   display: flex;
   justify-content: space-around;
 
-  height: 700px;
+  height: 650px;
   gap: 7rem;
   padding-top: 4rem;
 }
@@ -179,6 +181,52 @@ main {
 
 .img-container img {
   height: 500px;
-  width: 55%;
+  width: 60%;
   box-shadow: 0px 1px 4px 1px #bebebd;
+}
+
+/* About */
+.about {
+  height: 650px;
+}
+
+.about .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 7rem;
+  /* padding-top: 4rem; */
+}
+
+.about .container img {
+  height: 500px;
+  width: 60%;
+  box-shadow: 0px 1px 4px 1px #bebebd;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  gap: 1.5rem;
+  color: #22333b;
+}
+
+.about-text h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  padding-left: 2px;
+}
+
+.about-text button {
+  height: 48px;
+  margin-top: 2rem;
+  font-size: 1rem;
 }
