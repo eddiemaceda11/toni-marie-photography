@@ -39,7 +39,8 @@ button {
 header {
   height: 125px;
   min-width: 100%;
-  background: #b8c09e;
+  /* background: #b8c09e; */
+  background: #e8dbc9;
 }
 
 header section {
@@ -63,19 +64,19 @@ nav {
 .logo-1 {
   color: #fff;
   font-size: 2.6rem;
-  opacity: 0.9;
+  opacity: 0.95;
   font-family: "Parisienne", cursive;
 }
 
 .logo-2 {
   color: #fff;
   font-size: 2.6rem;
-  opacity: 0.7;
+  opacity: 0.8;
   font-family: "Allura", cursive;
   margin-top: -1rem;
 }
 
-ul {
+header ul {
   display: flex;
   gap: 2rem;
   font-size: 1.2rem;
@@ -111,7 +112,9 @@ button:hover {
 /* Sub header */
 .sub-header {
   padding-top: 2rem;
-  height: 700px;
+  padding-bottom: 4rem;
+
+  height: auto;
   width: 100%;
   background-color: #f9f7f3;
 
@@ -120,13 +123,15 @@ button:hover {
 }
 
 .swiper {
-  width: 70%;
-  height: 95%;
-  box-shadow: 0px 1px 4px 1px #1d1d1c;
+  width: 65%;
+  height: 625px;
+  border: 12px solid white;
+  box-shadow: 0px 1px 4px 1px #1d1d1c29;
 }
 
 .swiper-slide img {
-  width: 100%;
+  width: 99.5%;
+  margin-left: 2px;
 }
 
 .swiper-button-prev,
@@ -140,18 +145,21 @@ button:hover {
 
 /* Main */
 main {
-  height: 650px;
+  /* height: 690px; */
+  padding-bottom: 4rem;
   background-color: #f9f7f3;
   margin: 0 auto;
 }
 
-.img-container {
+main .container {
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
 
-  height: 650px;
+  /* height: 650px; */
   gap: 7rem;
   padding-top: 4rem;
+  border-top: 1px solid #b8c09e4a;
 }
 
 .main-text {
@@ -179,10 +187,10 @@ main {
   font-size: 1rem;
 }
 
-.img-container img {
+main .container img {
   height: 500px;
-  width: 60%;
-  box-shadow: 0px 1px 4px 1px #bebebd;
+  border: 12px solid white;
+  box-shadow: 0px 1px 4px 1px #1d1d1c29;
 }
 
 /* About */
@@ -193,19 +201,21 @@ main {
 .about .container {
   height: 100%;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
   gap: 7rem;
-  /* padding-top: 4rem; */
+  padding-top: 4rem;
 }
 
 .about .container img {
   height: 500px;
   width: 60%;
-  box-shadow: 0px 1px 4px 1px #bebebd;
+  border: 12px solid white;
+  box-shadow: 0px 1px 4px 1px #1d1d1c29;
 }
 
 .about-text {
+  padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
   height: 500px;
@@ -215,7 +225,7 @@ main {
 
 .about-text h1 {
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 400;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -233,7 +243,7 @@ main {
 
 /* Footer */
 footer {
-  background-color: #b8c09e;
+  background: #e8dbc9;
   height: 300px;
 }
 
@@ -268,6 +278,379 @@ footer .container h3 {
   font-weight: 400;
 }
 
+footer ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
 footer .container p {
   font-weight: 200;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-color: #fff;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background-color: #fff;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+/* Small Laptops */
+@media (max-width: 1360px) {
+  /* Swiper */
+  .swiper {
+    height: fit-content;
+  }
+
+  /* Main */
+  main .container {
+    gap: 6rem;
+    padding: 0 3rem;
+    padding-top: 4rem;
+    height: 450px;
+  }
+
+  .main-text {
+    gap: 0.9rem;
+  }
+
+  .main-text h1 {
+    font-size: 4rem;
+  }
+
+  .main-text p {
+    font-size: 1rem;
+  }
+
+  main .container img {
+    height: fit-content;
+    width: 50%;
+  }
+
+  .main-text button {
+    width: 25rem;
+  }
+
+  /* About */
+  .about {
+    height: 510px;
+    padding-bottom: 4rem;
+  }
+
+  .about .container img {
+    height: fit-content;
+    width: 50%;
+  }
+
+  .about .container {
+    gap: 6rem;
+    padding: 0 3rem;
+    padding-top: 4rem;
+  }
+
+  .about-text {
+    gap: 0.9rem;
+  }
+
+  .about-text h1 {
+    font-size: 4rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Main */
+  .main-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .main-text p {
+    font-size: 0.9rem;
+  }
+
+  .main-text button {
+    margin-top: 1rem;
+  }
+
+  /* About */
+  .about {
+    height: 480px;
+    padding-bottom: 4rem;
+  }
+
+  .about-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .about-text button {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1075px) {
+  .swiper {
+    margin-top: 2rem;
+  }
+
+  main .container img {
+    margin-top: 1rem;
+  }
+
+  .about .container img {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1010px) {
+  header ul {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* MAIN */
+  main {
+    height: 1000px;
+  }
+
+  main .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    gap: 2rem;
+    /* padding-bottom: 4rem; */
+  }
+
+  .main-text {
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    /* height: 500px; */
+  }
+
+  main .container img {
+    height: 500px;
+    width: 90%;
+    box-shadow: 0px 1px 4px 1px #bebebd;
+  }
+
+  /* ABOUT */
+  .about {
+    height: 900px;
+  }
+
+  .about .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    gap: 3rem;
+    /* padding-top: 6rem; */
+    /* padding-bottom: 4rem; */
+  }
+
+  .about-text {
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    /* height: 500px; */
+  }
+
+  .about .container img {
+    height: 500px;
+    width: 90%;
+    box-shadow: 0px 1px 4px 1px #bebebd;
+  }
+
+  .about-text button {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 870px) {
+  /* MAIN */
+  main {
+    height: 900px;
+  }
+
+  main .container img {
+    min-height: 400px;
+  }
+
+  /* ABOUT */
+  .about {
+    height: 900px;
+  }
+
+  .about .container {
+    padding-top: 3rem;
+  }
+
+  .about .container img {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 685px) {
+  header ul {
+    display: none;
+  }
+}
+
+@media (max-width: 515px) {
+  header {
+    height: 75px;
+  }
+
+  .logo-1 {
+    font-size: 1.8rem;
+  }
+
+  .logo-2 {
+    display: none;
+  }
+
+  .connect {
+    display: none;
+  }
+
+  /* SUB header */
+
+  .swiper {
+    width: auto;
+    height: 500px;
+    margin: 0 2rem;
+    border-top: none;
+    border: 12px solid white;
+    box-shadow: 0px 1px 4px 1px #1d1d1c29;
+    margin-top: 2rem;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    margin-left: 0;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  /*  */
+
+  .main-text {
+    /* display: none; */
+    max-width: 100%;
+  }
+
+  /*  */
+  .about-text {
+    /* display: none; */
+    max-width: 100%;
+  }
+
+  /* MAIN */
+  main {
+    /* border: 1px solid red; */
+    height: 960px;
+    /* box-shadow: 0px 1px 4px 1px #1d1d1c29; */
+  }
+
+  main .container {
+    width: 100%;
+    /* border: 1px solid blue; */
+    height: 100%;
+    padding-top: 2rem;
+    border-top: ;
+  }
+
+  main .container img {
+    border: 12px solid white;
+    height: 200px;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: 60% 50%;
+    /* box-shadow: 0px 1px 4px 1px #bebebd; */
+  }
+
+  .main-text button {
+    width: 15rem;
+  }
+
+  /* ABOUT */
+  .about {
+    /* border: 1px solid red; */
+    height: 1000px;
+    /* box-shadow: 0px 1px 4px 1px #1d1d1c29; */
+  }
+
+  .about .container {
+    width: 100%;
+    /* border: 1px solid blue; */
+    height: 100%;
+  }
+
+  .about .container img {
+    border: 12px solid white;
+    height: 200px;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: 60% 50%;
+    /* box-shadow: 0px 1px 4px 1px #bebebd; */
+  }
+
+  .about-text {
+    padding-top: 0rem;
+  }
+
+  .about-text button {
+    width: 15rem;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 280px;
+  }
+
+  .capture h2 {
+    font-size: 1rem;
+  }
+
+  footer .container h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 2rem;
+  }
 }
