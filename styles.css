@@ -291,7 +291,7 @@ footer .container p {
 
 /* HAMBURGER */
 .hamburger {
-  display: block;
+  display: none;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -528,6 +528,10 @@ footer .container p {
 }
 
 @media (max-width: 515px) {
+  .hamburger {
+    display: block;
+  }
+
   header {
     height: 75px;
   }
