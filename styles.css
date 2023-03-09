@@ -437,7 +437,7 @@ footer .container p {
 @media (max-width: 1000px) {
   /* MAIN */
   main {
-    height: 1000px;
+    height: 925px;
   }
 
   main .container {
@@ -459,13 +459,13 @@ footer .container p {
 
   main .container img {
     height: 500px;
-    width: 90%;
+    width: 650px;
     box-shadow: 0px 1px 4px 1px #bebebd;
   }
 
   /* ABOUT */
   .about {
-    height: 900px;
+    height: 950px;
   }
 
   .about .container {
@@ -474,8 +474,8 @@ footer .container p {
     justify-content: center;
     /* border: 1px solid red; */
     height: 100%;
-    gap: 3rem;
-    /* padding-top: 6rem; */
+    gap: 2rem;
+    padding-top: 2.5rem;
     /* padding-bottom: 4rem; */
   }
 
@@ -488,7 +488,7 @@ footer .container p {
 
   .about .container img {
     height: 500px;
-    width: 90%;
+    width: 650px;
     box-shadow: 0px 1px 4px 1px #bebebd;
   }
 
@@ -548,7 +548,7 @@ footer .container p {
 
   .swiper {
     width: auto;
-    height: 500px;
+    height: 400px;
     margin: 0 2rem;
     border-top: none;
     border: 12px solid white;
@@ -581,7 +581,7 @@ footer .container p {
   /* MAIN */
   main {
     /* border: 1px solid red; */
-    height: 960px;
+    height: 930px;
     /* box-shadow: 0px 1px 4px 1px #1d1d1c29; */
   }
 
@@ -590,7 +590,7 @@ footer .container p {
     /* border: 1px solid blue; */
     height: 100%;
     padding-top: 2rem;
-    border-top: ;
+    /* border-top: ; */
   }
 
   main .container img {
@@ -603,6 +603,9 @@ footer .container p {
     /* box-shadow: 0px 1px 4px 1px #bebebd; */
   }
 
+  .main-text {
+  }
+
   .main-text button {
     width: 15rem;
   }
@@ -610,7 +613,7 @@ footer .container p {
   /* ABOUT */
   .about {
     /* border: 1px solid red; */
-    height: 1000px;
+    height: 910px;
     /* box-shadow: 0px 1px 4px 1px #1d1d1c29; */
   }
 
@@ -622,7 +625,7 @@ footer .container p {
 
   .about .container img {
     border: 12px solid white;
-    height: 200px;
+    /* max-height: 400px; */
     width: 100%;
 
     object-fit: cover;
