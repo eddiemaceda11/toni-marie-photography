@@ -691,8 +691,12 @@ footer .container p {
 }
 
 @media (max-width: 405px) {
+  .about .container {
+    padding-top: 3rem;
+  }
+
   .about {
-    height: 960px;
+    height: 1000px;
     overflow: scroll;
   }
 }
