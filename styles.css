@@ -690,7 +690,24 @@ footer .container p {
   }
 }
 
-@media (max-width: 405px) {
+@media (max-width: 515px) {
+  .about .container {
+    /* padding-top: 3rem; */
+  }
+
+  .about {
+    height: 860px;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 450px) {
+  .about {
+    height: 900px;
+  }
+}
+
+@media (max-width: 402px) {
   .about .container {
     padding-top: 3rem;
   }
