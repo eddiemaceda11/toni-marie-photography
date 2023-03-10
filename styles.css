@@ -717,3 +717,22 @@ footer .container p {
     overflow: scroll;
   }
 }
+
+/***************/
+/***PORTFOLIO***/
+/***************/
+section.portfolio,
+section.pricing {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+section.portfolio h1,
+section.pricing h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 8rem;
+  color: #cfbda5;
+  font-family: "Parisienne", cursive;
+}
